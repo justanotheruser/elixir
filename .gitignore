@@ -1,0 +1,6 @@
+__pycache__
+.idea
+*.sqlite3
+.mypy_cache/
+*.log
+требования.txt
