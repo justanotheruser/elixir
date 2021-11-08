@@ -10,7 +10,7 @@ from PyQt6.QtCore import Qt, QDate
 from PyQt6.QtGui import QColor, QKeyEvent
 from PyQt6.QtSql import QSqlQueryModel, QSqlQuery
 
-from dbconnection import openDbConnection
+from .dbconnection import openDbConnection
 
 ID_COL = 0
 EXP_DATE_COL = 2
@@ -139,7 +139,7 @@ class ElixirController:
 
 
 def main():
-    logging.basicConfig(filename='elixir.log',
+    logging.basicConfig(filename='../elixir.log',
                         level=logging.DEBUG,
                         format='%(asctime)s | %(levelname)s | %(message)s')
     logging.debug(f"Elixir started")
